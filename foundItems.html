@@ -1,0 +1,11 @@
+<div class="items" ng-repeat="item in foundItem.items">
+      <blockquote>
+        <p>{{ item.name    }}
+           <button class="btn btn-danger btn-sm" ng-click="foundItem.onRemove({index: $index});">Don't want this one!</button>
+         </p>
+        <p>{{item.short_name}}</p>
+        <footer> {{item.description }}
+        </footer>
+      </blockquote>
+</div>
+<div ng-transclude ></div>
